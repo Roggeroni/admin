@@ -5,14 +5,10 @@
     <body>
         <h1>test</h1>
     <script>
-    const referrer = document.referrer;
+        const referrer = document.referrer;
 
-    if (
-    referrer === "" ||
-    !referrer.startsWith("https://rogeroni.github.io")
-    ) {
-    window.location.replace("https://admin.elkiokolice.pl");
-    }
+        if (!referrer.startsWith("https://admin.elkiokolice.pl")) {
+            window.location.replace("https://admin.elkiokolice.pl");
+        }
     </script>
-    </body>
 </html>
